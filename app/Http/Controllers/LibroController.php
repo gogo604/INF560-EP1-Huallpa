@@ -81,17 +81,20 @@ class LibroController extends Controller
 
     public function inicio()
     {
-        return view('inicio', compact('libros'));
+        return view('inicio', ['libros' => $this->libros]);
     }
 
     public function catalogo()
     {
-        return view('catalogo', compact('libros'));
+        return view('catalogo', ['libros' => $this->libros]);
     }
 
     public function detalle(int $id)
     {
-        return view('detalle', compact('libros', 'id'));
+        return view('detalle', [
+            'libros' => $this->libros,
+            'id' => $id
+        ]);
     }
 
     public function nosotros()
