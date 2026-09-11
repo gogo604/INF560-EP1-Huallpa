@@ -18,6 +18,7 @@ Jhojan Ander Huallpa Tarqui
 ```bash
 composer install
 npm install
+```
 
 ## Ejecución
 
